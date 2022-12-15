@@ -1,22 +1,22 @@
 import { Component, Fragment } from "react";
 import Footer from "../component/layout/footer";
-import Header from "../component/layout/header";
+//import Header from "../component/layout/header";
 import PageHeader from "../component/layout/pageheader";
 import AdminPage from "../component/section/adminpage";
-import VideoSection from "../component/section/video";
+//import VideoSection from "../component/section/video";
+import ProductMgmt from "../component/section/productmgmt";
 
 class AdminPageSection extends Component {
     render() { 
         return (
             <Fragment>
-                <Header />
-                <PageHeader title={'ADMIN DASHBOARD LOGIN'} curPage={'DASHBOARD'} />
+                <PageHeader title={'ADMIN DASHBOARD'} curPage={'DASHBOARD'} />
                 <AdminPage />
-                <VideoSection />
+                <ProductMgmt/>
                 <Footer />
             </Fragment>
         );
     }
 }
  
-//export default AdminPageSection;
+export default AdminPageSection;
